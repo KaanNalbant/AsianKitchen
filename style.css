@@ -1,0 +1,146 @@
+:root {
+  --gold: #c59d5f;
+  --clr-primary-1: #bb2525;
+  --clr-primary-5: #2c2c2c;
+  --clr-white: #fff;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-9: #bcccdc;
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: "Zilla Slab", serif;
+  background-color: #f1f5f8;
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.menu {
+  padding: 5rem 0;
+  max-width: 1170px;
+  /* Standard container width */
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: #c59d5f;
+  /* Or an orangey color matching screenshot */
+  color: #dfa666;
+  margin-bottom: 1rem;
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border-color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  color: black;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: "Zilla Slab", serif;
+  border: 1px solid black;
+}
+
+.filter-btn:hover {
+  background: black;
+  color: white;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  /* Bootstrap row handles flex behavior, but we add custom grid gaps if needed or rely on bootstrap cols */
+}
+
+/* Menu Item Styling matching the image */
+.menu-items {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+/* For responsive mobile */
+@media screen and (max-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo {
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+}
+
+.photo {
+  object-fit: cover;
+  height: 175px;
+  width: 175px;
+  /* Square photo */
+  border: 0.25rem solid black;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: block;
+}
+
+.menu-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-title h4 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #df3e3e;
+  /* Reddish title */
+  margin: 0;
+}
+
+.menu-title .price {
+  color: #df3e3e;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.menu-text {
+  color: #555;
+  padding-top: 1rem;
+}
